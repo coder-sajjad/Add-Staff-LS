@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ALL CSS FIiles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.css">
+    
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <title>OOP First Project</title>
+
+</head>
+<body>
+    
+    <!-- Add New Staff -->
+    <section class="py-5 sajjad_staff">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <h3 class="card-header py-3 text-white bg-primary">Add New Staff</h3>
+                        <div class="card-body">
+                            <div class="alertMessage"></div>
+                            <form id="add_staff_form" method="POST">
+                                <div class="my-3">
+                                    <label for="">Name</label>
+                                    <input name="name" type="text" class="form-control shadow-none">
+                                </div>
+                                <div class="my-3">
+                                    <label for="">E-mail</label>
+                                    <input name="email" type="email" class="form-control shadow-none">
+                                </div>
+                                <div class="my-3">
+                                    <label for="">Number</label>
+                                    <input name="number" type="text" class="form-control shadow-none">
+                                </div>
+                                <div class="my-3">
+                                    <label for="">Location</label>
+                                    <input name="location" type="text" class="form-control shadow-none">
+                                </div>
+                                <div class="my-3">
+                                    <label for="">Photo</label>
+                                    <input name="photo" type="text" class="form-control shadow-none">
+                                </div>
+                                <div class="my-3">
+                                    <input type="submit" class="btn btn-primary w-100 shadow-none">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Staff table -->
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>E-mail</th>
+                                        <th>Number</th>
+                                        <th>Location</th>
+                                        <th>Photo</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="staff_data_list">
+                                    <!-- <tr>
+                                        <td>1</td>
+                                        <td>Sajjad</td>
+                                        <td>example@gmail.com</td>
+                                        <td>01623524125</td>
+                                        <td>Banani</td>
+                                        <td><img style="width: 50px; height: 50px; object-fit: cover;" src="https://us.123rf.com/450wm/luismolinero/luismolinero1909/luismolinero190917934/130592146-handsome-young-man-in-pink-shirt-over-isolated-blue-background-keeping-the-arms-crossed-in-frontal-p.jpg?ver=6" alt="Image"></td>
+                                        <td>
+                                            <button class="btn btn-sm bg-primary"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                            <button class="btn btn-sm bg-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></i></button>
+                                            <button class="btn btn-sm bg-danger"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                        </td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <img src="./assets/media/images.png" alt=""> -->
+
+    <!-- All JS Files -->
+    <script src="./assets/js/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script type="module" src="./app.js"></script>
+
+</body>
+</html>
